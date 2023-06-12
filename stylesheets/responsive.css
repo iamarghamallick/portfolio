@@ -1,0 +1,120 @@
+@media only screen and (max-width: 768px) {
+
+    /* home  */
+    .home {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 1rem;
+        padding: 1rem 0;
+    }
+
+    .home .home-left:nth-of-type(1) {
+        order: 2;
+    }
+
+    .home-right img {
+        width: 280px;
+    }
+
+    .home-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .home-left p {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    /* about */
+    .about {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 2rem;
+        padding: 3rem 0;
+    }
+
+    .about-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-right p {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    /* skills */
+    .skills {
+        padding: 2rem 1rem;
+    }
+
+    .skill-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* portfolio  */
+    .portfolio {
+        padding: 2rem 1rem;
+    }
+
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem 3rem;
+    }
+}
+
+/* contact  */
+@media only screen and (max-width: 425px) {
+
+    /* portfolio  */
+    .portfolio-container {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 2rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .contact-links,
+    .contact-form-wrapper {
+        width: 100%;
+    }
+
+    .contact-links {
+        border-radius: 10px 10px 0 0;
+    }
+
+    .contact-form-wrapper {
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .contact-box {
+        width: 95%;
+        margin: 8% 5%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    h2 {
+        font-size: clamp(40px, 10vw, 60px);
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    h2 {
+        font-size: clamp(30px, 12vw, 60px);
+    }
+
+    .links {
+        padding-top: 30px;
+    }
+
+    img {
+        width: 38px;
+        height: 38px;
+    }
+}

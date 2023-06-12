@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheets/utils.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/responsive.css">
+    <link rel="stylesheet" href="stylesheets/scrollbar.css">
+    <script src="https://kit.fontawesome.com/b955eaf29b.js" crossorigin="anonymous"></script>
+    <title>ARGHA DEVELOPER PORTFOLIO</title>
+</head>
+
+<body>
+    <header id="page-top">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">ARGHA.DEV</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item px-2">
+                            <a class="nav-link" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- home  -->
+        <section id="home" class="home">
+            <div class="home-left mx-auto">
+                <p>Hi, I'm <span class="text-purple">Argha Mallick</span>
+                    <br>and I am a passionate
+                    <br><span id="typing" class="text-purple">Web Developer</span>
+                </p>
+                <button type="button" class="btn btn-dark"><i class="fa-solid fa-download"></i> Download CV</button>
+            </div>
+            <div class="home-right mx-auto">
+                <img src="assets/images/home-bg.png" alt="home-bg">
+            </div>
+        </section>
+        <div class="h-bar"></div>
+
+        <!-- about  -->
+        <section id="about" class="about">
+            <div class="about-left mx-auto">
+                <img src="assets/images/argha.png" alt="argha">
+            </div>
+            <div class="about-right mx-auto">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto beatae ipsam amet animi pariatur cum
+                    sunt molestiae, similique distinctio quos doloribus recusandae voluptatem perferendis autem ut
+                    facere quae minima aliquid ad deleniti. Cum, libero incidunt.</p>
+                <div class="button-group">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="btn my-btn-fill mx-3" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">More About Me</button>
+                    <button type="button" class="btn my-btn">Let's Talk !</button>
+                </div>
+            </div>
+        </section>
+        <!-- modal for about section  -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content bg-dark text-white">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">TIMELINE</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        ...
+                    </div>
+                    <div class="modal-footer d-flex justify-content-center">
+                        <button type="button" class="btn btn-secondary bg-dark border-dark" data-bs-dismiss="modal"><i
+                                class="fa-regular fa-circle-xmark"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of modal  -->
+
+        <!-- skills  -->
+        <section class="skills" id="skills">
+            <div class="section-heading">
+                <h2>SKILL SET</h2>
+                <div class="heading-underline"></div>
+            </div>
+            <div class="skill-container">
+                <div class="skill-item mx-auto">
+                    <img src="assets/svg/html.svg" alt="html" class="skill-logo">
+                    <div class="skill-details">
+                        <h5 class="skill-title">HTML</h5>
+                        <div class="skill-progress-bar hundred"></div>
+                    </div>
+                </div>
+                <div class="skill-item mx-auto">
+                    <img src="assets/svg/css.svg" alt="css" class="skill-logo">
+                    <div class="skill-details">
+                        <h5 class="skill-title">CSS</h5>
+                        <div class="skill-progress-bar fifty"></div>
+                    </div>
+                </div>
+                <div class="skill-item mx-auto">
+                    <img src="assets/svg/js.svg" alt="JavaScript" class="skill-logo">
+                    <div class="skill-details">
+                        <h5 class="skill-title">JavaScript</h5>
+                        <div class="skill-progress-bar eighty"></div>
+                    </div>
+                </div>
+                <div class="skill-item mx-auto">
+                    <img src="assets/svg/c.svg" alt="c" class="skill-logo">
+                    <div class="skill-details">
+                        <h5 class="skill-title">C</h5>
+                        <div class="skill-progress-bar eighty"></div>
+                    </div>
+                </div>
+                <div class="skill-item mx-auto">
+                    <img src="assets/svg/cpp.svg" alt="cpp" class="skill-logo">
+                    <div class="skill-details">
+                        <h5 class="skill-title">CPP</h5>
+                        <div class="skill-progress-bar seventy"></div>
+                    </div>
+                </div>
+                <div class="skill-item mx-auto">
+                    <img src="assets/svg/python.svg" alt="python" class="skill-logo">
+                    <div class="skill-details">
+                        <h5 class="skill-title">Python</h5>
+                        <div class="skill-progress-bar fifty"></div>
+                    </div>
+                </div>
+                <div class="skill-item mx-auto">
+                    <img src="assets/svg/node.svg" alt="node" class="skill-logo">
+                    <div class="skill-details">
+                        <h5 class="skill-title">Node JS</h5>
+                        <div class="skill-progress-bar sixty"></div>
+                    </div>
+                </div>
+                <div class="skill-item mx-auto">
+                    <img src="assets/svg/react.svg" alt="react" class="skill-logo">
+                    <div class="skill-details">
+                        <h5 class="skill-title">React JS</h5>
+                        <div class="skill-progress-bar sixty"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- portfolio  -->
+        <section class="portfolio" id="portfolio">
+            <div class="section-heading">
+                <h2>PORTFOLIO</h2>
+                <div class="heading-underline"></div>
+            </div>
+            <div class="portfolio-container">
+                <div class="portfolio-item mx-auto">
+                    <img src="https://images.pexels.com/photos/17137556/pexels-photo-17137556/free-photo-of-wood-animal-tree-lizard.jpeg"
+                        alt="" class="portfolio-image">
+                    <div class="button-group">
+                        <button type="button" class="btn my-btn mx-3"><a href="#"><i class="fa-solid fa-link"></i>
+                                Visit</a></button>
+                    </div>
+                </div>
+                <div class="portfolio-item mx-auto">
+                    <img src="https://images.pexels.com/photos/17137556/pexels-photo-17137556/free-photo-of-wood-animal-tree-lizard.jpeg"
+                        alt="" class="portfolio-image">
+                    <div class="button-group">
+                        <button type="button" class="btn my-btn mx-3"><a href="#"><i class="fa-solid fa-link"></i>
+                                Visit</a></button>
+                    </div>
+                </div>
+                <div class="portfolio-item mx-auto">
+                    <img src="https://images.pexels.com/photos/17137556/pexels-photo-17137556/free-photo-of-wood-animal-tree-lizard.jpeg"
+                        alt="" class="portfolio-image">
+                    <div class="button-group">
+                        <button type="button" class="btn my-btn mx-3"><a href="#"><i class="fa-solid fa-link"></i>
+                                Visit</a></button>
+                    </div>
+                </div>
+                <div class="portfolio-item mx-auto">
+                    <img src="https://images.pexels.com/photos/17137556/pexels-photo-17137556/free-photo-of-wood-animal-tree-lizard.jpeg"
+                        alt="" class="portfolio-image">
+                    <div class="button-group">
+                        <button type="button" class="btn my-btn mx-3"><a href="#"><i class="fa-solid fa-link"></i>
+                                Visit</a></button>
+                    </div>
+                </div>
+                <div class="portfolio-item mx-auto">
+                    <img src="https://images.pexels.com/photos/17137556/pexels-photo-17137556/free-photo-of-wood-animal-tree-lizard.jpeg"
+                        alt="" class="portfolio-image">
+                    <div class="button-group">
+                        <button type="button" class="btn my-btn mx-3"><a href="#"><i class="fa-solid fa-link"></i>
+                                Visit</a></button>
+                    </div>
+                </div>
+                <div class="portfolio-item mx-auto">
+                    <img src="https://images.pexels.com/photos/17137556/pexels-photo-17137556/free-photo-of-wood-animal-tree-lizard.jpeg"
+                        alt="" class="portfolio-image">
+                    <div class="button-group">
+                        <button type="button" class="btn my-btn mx-3"><a href="#"><i class="fa-solid fa-link"></i>
+                                Visit</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact  -->
+        <section id="contact">
+            <div class="contact-box">
+                <div class="contact-links">
+                    <h2>CONTACT</h2>
+                    <div class="links">
+                        <div class="link">
+                            <a href=""><img src="assets/social/linkedin.svg" alt="linkedin"></a>
+                        </div>
+                        <div class="link">
+                            <a href=""><img src="assets/social/github.svg" alt="github"></a>
+                        </div>
+                        <div class="link">
+                            <a href=""><img src="assets/social/twitter.svg" alt="twitter"></a>
+                        </div>
+                        <div class="link">
+                            <a href=""><img src="assets/social/facebook.svg" alt="facebook"></a>
+                        </div>
+                        <div class="link">
+                            <a href=""><img src="assets/social/instagram.svg" alt="instagram"></a>
+                        </div>
+                        <div class="link">
+                            <a href="mailto:contact.arghamallick@gmail.com"><img src="assets/social/mail.svg" alt="mail"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form>
+                        <div class="form-item">
+                            <input type="text" name="sender" required>
+                            <label>Name:</label>
+                        </div>
+                        <div class="form-item">
+                            <input type="text" name="email" required>
+                            <label>Email:</label>
+                        </div>
+                        <div class="form-item">
+                            <textarea class="" name="message" required></textarea>
+                            <label>Message:</label>
+                        </div>
+                        <button class="submit-btn">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="d-flex flex-row align-items-center justify-content-center">
+        <p class="text-center text-light">2023 &copy; <a href="#" class="text-light">Argha.dev</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="scripts/scrollReveal.js"></script>
+    <script src="scripts/main.js"></script>
+    <script>
+        var typed = new Typed('#typing', {
+            // Waits 1000ms after typing "First"
+            strings: ['Learner', 'Student', 'Web Developer', 'Editor'],
+            typeSpeed: 100,
+            backDelay: 1500,
+            loop: true,
+            loopCount: Infinity,
+        });
+
+    </script>
+</body>
+
+</html>
