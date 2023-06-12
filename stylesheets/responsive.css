@@ -22,7 +22,6 @@
     }
 
     .home-left p {
-        font-size: 1.6rem;
         text-align: center;
     }
 
@@ -42,7 +41,6 @@
 
     .about-right p {
         text-align: center;
-        font-size: 1rem;
     }
 
     /* skills */
