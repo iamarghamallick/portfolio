@@ -22,7 +22,7 @@
     min-height: 100vh;
     background: var(--main-bg);
     color: var(--white);
-    margin-top: 63px;
+    margin-top: 50px;
     padding: 0rem 6rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
