@@ -22,6 +22,10 @@
     transition: background-color 0.5s;
 }
 
+.navbar-toggler-icon {
+    background-image: url("../assets/svg/hamburger.svg") !important;
+}
+
 /* home section  */
 .home {
     min-height: 100vh;
