@@ -252,7 +252,7 @@
                     </div>
                 </div>
                 <div class="contact-form-wrapper">
-                    <form>
+                    <form action="https://formsubmit.co/contact.arghamallick@gmail.com" method="POST">
                         <div class="form-item">
                             <input type="text" name="sender" required>
                             <label>Name:</label>
@@ -265,7 +265,12 @@
                             <textarea class="" name="message" required></textarea>
                             <label>Message:</label>
                         </div>
-                        <button class="submit-btn">Send</button>
+                        <!-- hidden input fields to setup form submit  -->
+                        <!-- <input type="hidden" name="_captcha" value="false"> -->
+                        <input type="hidden" name="_subject" value="New submission!">
+                        <input type="hidden" name="_next" value="pages/thanks.html">
+                        <input type="hidden" name="_autoresponse" value="Thanks for your response. I will get back to soon!">
+                        <button type="submit" class="submit-btn">Send</button>
                     </form>
                 </div>
             </div>

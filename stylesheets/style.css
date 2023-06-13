@@ -3,6 +3,11 @@
 
 /* navbar */
 .navbar {
+    background-color: var(--main-bg) !important;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.navbar.scrolled {
     background-color: var(--purple-dark) !important;
 }
 
