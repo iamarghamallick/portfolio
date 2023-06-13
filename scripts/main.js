@@ -6,3 +6,7 @@ document.addEventListener('scroll', () => {
         navbar.classList.remove('scrolled');
     }
 })
+
+downloadCv = ()=> {
+    alert('Currently unavailable! Please try later.')
+}

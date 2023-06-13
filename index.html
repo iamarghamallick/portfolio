@@ -56,7 +56,7 @@
                     <br>and I am a passionate
                     <br><span id="typing" class="text-purple">Web Developer</span>
                 </p>
-                <button type="button" class="btn btn-dark"><i class="fa-solid fa-download"></i> Download CV</button>
+                <button type="button" class="btn btn-dark" onclick="downloadCv()"><i class="fa-solid fa-download"></i> Download CV</button>
             </div>
             <div class="home-right mx-auto">
                 <img src="assets/images/home-bg.png" alt="home-bg">
@@ -70,14 +70,12 @@
                 <img src="assets/images/argha.png" alt="argha">
             </div>
             <div class="about-right mx-auto">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto beatae ipsam amet animi pariatur cum
-                    sunt molestiae, similique distinctio quos doloribus recusandae voluptatem perferendis autem ut
-                    facere quae minima aliquid ad deleniti. Cum, libero incidunt.</p>
+                <p>As a second-year B.Tech student pursuing Computer Science and Engineering, I am passionate about technology and its limitless possibilities. With a strong foundation in programming and problem-solving, I constantly strive to expand my knowledge and skills. Through my dedication, curiosity, and commitment to excellence, I aim to make a meaningful contribution to the field of computer science.</p>
                 <div class="button-group">
                     <!-- Button trigger modal -->
                     <button type="button" class="btn my-btn-fill mx-3" data-bs-toggle="modal"
                         data-bs-target="#exampleModal">More About Me</button>
-                    <button type="button" class="btn my-btn">Let's Talk !</button>
+                    <button type="button" class="btn my-btn"><a href="#contact">Let's Talk !</a></button>
                 </div>
             </div>
         </section>
@@ -90,7 +88,7 @@
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        ...
+                        To be Updated!
                     </div>
                     <div class="modal-footer d-flex justify-content-center">
                         <button type="button" class="btn btn-secondary bg-dark border-dark" data-bs-dismiss="modal"><i
@@ -162,6 +160,20 @@
                     <div class="skill-details">
                         <h5 class="skill-title">React JS</h5>
                         <div class="skill-progress-bar sixty"></div>
+                    </div>
+                </div>
+                <div class="skill-item mx-auto">
+                    <img src="assets/svg/uiux.svg" alt="uiux" class="skill-logo">
+                    <div class="skill-details">
+                        <h5 class="skill-title">UI/UX Designing</h5>
+                        <div class="skill-progress-bar seventy"></div>
+                    </div>
+                </div>
+                <div class="skill-item mx-auto">
+                    <img src="assets/svg/git.svg" alt="git" class="skill-logo">
+                    <div class="skill-details">
+                        <h5 class="skill-title">Version Control</h5>
+                        <div class="skill-progress-bar eighty"></div>
                     </div>
                 </div>
             </div>
@@ -288,16 +300,15 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="scripts/scrollReveal.js"></script>
     <script src="scripts/main.js"></script>
+    <!-- script for typing animation  -->
     <script>
         var typed = new Typed('#typing', {
-            // Waits 1000ms after typing "First"
-            strings: ['Learner', 'Student', 'Web Developer', 'Editor'],
+            strings: ['Learner', 'Student', 'Web Developer', 'Editor', 'Designer', 'Mobile Photographer'],
             typeSpeed: 100,
             backDelay: 1500,
             loop: true,
             loopCount: Infinity,
         });
-
     </script>
 </body>
 
