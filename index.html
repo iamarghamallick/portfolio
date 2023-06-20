@@ -56,7 +56,8 @@
                     <br>and I am a passionate
                     <br><span id="typing" class="text-purple">Web Developer</span>
                 </p>
-                <button type="button" class="btn btn-dark" onclick="downloadCv()"><i class="fa-solid fa-download"></i> Download CV</button>
+                <button type="button" class="btn btn-dark" onclick="downloadCv()"><i class="fa-solid fa-download"></i>
+                    Download CV</button>
             </div>
             <div class="home-right mx-auto">
                 <img src="assets/images/home-bg.png" alt="home-bg">
@@ -70,8 +71,12 @@
                 <img src="assets/images/argha.png" alt="argha">
             </div>
             <div class="about-right mx-auto">
-                <p>As a second-year B.Tech student pursuing Computer Science and Engineering, I am passionate about technology and its limitless possibilities. With a strong foundation in programming and problem-solving, I constantly strive to expand my knowledge and skills. Through my dedication, curiosity, and commitment to excellence, I aim to make a meaningful contribution to the field of computer science.</p>
-                <div class="button-group">
+                <p>As a second-year B.Tech student pursuing Computer Science and Engineering, I am passionate about
+                    technology and its limitless possibilities. With a strong foundation in programming and
+                    problem-solving, I constantly strive to expand my knowledge and skills. Through my dedication,
+                    curiosity, and commitment to excellence, I aim to make a meaningful contribution to the field of
+                    computer science.</p>
+                <div class="about-button-group">
                     <!-- Button trigger modal -->
                     <button type="button" class="btn my-btn-fill mx-3" data-bs-toggle="modal"
                         data-bs-target="#exampleModal">More About Me</button>
@@ -185,50 +190,17 @@
                 <h2>PORTFOLIO</h2>
                 <div class="heading-underline"></div>
             </div>
-            <div class="portfolio-container">
-                <div class="portfolio-item mx-auto">
-                    <img src="https://images.pexels.com/photos/17137556/pexels-photo-17137556/free-photo-of-wood-animal-tree-lizard.jpeg"
+            <div class="portfolio-container" id="portfolio-container">
+                <!-- below div is to be repeated  -->
+                <div class="content portfolio-item mx-auto">
+                    <div class="content-overlay"></div>
+                    <img class="content-image"
+                        src="https://images.pexels.com/photos/17137556/pexels-photo-17137556/free-photo-of-wood-animal-tree-lizard.jpeg"
                         alt="" class="portfolio-image">
-                    <div class="button-group">
-                        <button type="button" class="btn my-btn mx-3"><a href="#"><i class="fa-solid fa-link"></i>
-                                Visit</a></button>
+                    <div class="content-details fadeIn-bottom">
+                        <h3 class="content-title">This is a title</h3>
+                        <p class="content-text">This is a short description</p>
                     </div>
-                </div>
-                <div class="portfolio-item mx-auto">
-                    <img src="https://images.pexels.com/photos/17137556/pexels-photo-17137556/free-photo-of-wood-animal-tree-lizard.jpeg"
-                        alt="" class="portfolio-image">
-                    <div class="button-group">
-                        <button type="button" class="btn my-btn mx-3"><a href="#"><i class="fa-solid fa-link"></i>
-                                Visit</a></button>
-                    </div>
-                </div>
-                <div class="portfolio-item mx-auto">
-                    <img src="https://images.pexels.com/photos/17137556/pexels-photo-17137556/free-photo-of-wood-animal-tree-lizard.jpeg"
-                        alt="" class="portfolio-image">
-                    <div class="button-group">
-                        <button type="button" class="btn my-btn mx-3"><a href="#"><i class="fa-solid fa-link"></i>
-                                Visit</a></button>
-                    </div>
-                </div>
-                <div class="portfolio-item mx-auto">
-                    <img src="https://images.pexels.com/photos/17137556/pexels-photo-17137556/free-photo-of-wood-animal-tree-lizard.jpeg"
-                        alt="" class="portfolio-image">
-                    <div class="button-group">
-                        <button type="button" class="btn my-btn mx-3"><a href="#"><i class="fa-solid fa-link"></i>
-                                Visit</a></button>
-                    </div>
-                </div>
-                <div class="portfolio-item mx-auto">
-                    <img src="https://images.pexels.com/photos/17137556/pexels-photo-17137556/free-photo-of-wood-animal-tree-lizard.jpeg"
-                        alt="" class="portfolio-image">
-                    <div class="button-group">
-                        <button type="button" class="btn my-btn mx-3"><a href="#"><i class="fa-solid fa-link"></i>
-                                Visit</a></button>
-                    </div>
-                </div>
-                <div class="portfolio-item mx-auto">
-                    <img src="https://images.pexels.com/photos/17137556/pexels-photo-17137556/free-photo-of-wood-animal-tree-lizard.jpeg"
-                        alt="" class="portfolio-image">
                     <div class="button-group">
                         <button type="button" class="btn my-btn mx-3"><a href="#"><i class="fa-solid fa-link"></i>
                                 Visit</a></button>
@@ -259,7 +231,8 @@
                             <a href=""><img src="assets/social/instagram.svg" alt="instagram"></a>
                         </div>
                         <div class="link">
-                            <a href="mailto:contact.arghamallick@gmail.com"><img src="assets/social/mail.svg" alt="mail"></a>
+                            <a href="mailto:contact.arghamallick@gmail.com"><img src="assets/social/mail.svg"
+                                    alt="mail"></a>
                         </div>
                     </div>
                 </div>
@@ -280,8 +253,10 @@
                         <!-- hidden input fields to setup form submit  -->
                         <!-- <input type="hidden" name="_captcha" value="false"> -->
                         <input type="hidden" name="_subject" value="New submission!">
-                        <input type="hidden" name="_next" value="https://iamarghamallick.github.io/portfolio/pages/thanks.html">
-                        <input type="hidden" name="_autoresponse" value="Thanks for your response. I will get back to soon!">
+                        <input type="hidden" name="_next"
+                            value="https://iamarghamallick.github.io/portfolio/pages/thanks.html">
+                        <input type="hidden" name="_autoresponse"
+                            value="Thanks for your response. I will get back to soon!">
                         <button type="submit" class="submit-btn">Send</button>
                     </form>
                 </div>
