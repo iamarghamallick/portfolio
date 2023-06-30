@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/images/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="stylesheets/utils.css">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <link rel="stylesheet" href="stylesheets/responsive.css">
+    <link rel="stylesheet" href="stylesheets/scrollbar.css">
+    <script src="https://kit.fontawesome.com/b955eaf29b.js" crossorigin="anonymous"></script>
+    <title>ARGHA.Dev | Projects</title>
+    <style>
+        .portfolio {
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <header id="page-top">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">ARGHA.DEV</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-row-reverse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item px-2">
+                            <a class="nav-link" aria-current="page" href="/portfolio#home">Home</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="/portfolio#about">About</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="/portfolio#skills">Skills</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link" href="/portfolio#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- portfolio  -->
+        <section class="portfolio" id="portfolio">
+            <div class="section-heading">
+                <h2>PORTFOLIO</h2>
+                <div class="heading-underline"></div>
+                <div id="loading" class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+            <div class="portfolio-container" id="portfolio-container">
+                <!-- below div is to be repeated  -->
+                <div class="content portfolio-item mx-auto">
+                    <!-- <div class="content-overlay"></div>
+                    <img class="content-image"
+                        src="assets/projects/default.jpg"
+                        alt="" class="portfolio-image">
+                    <div class="content-details fadeIn-bottom">
+                        <h3 class="content-title">This is a title</h3>
+                        <p class="content-text">This is a short description</p>
+                    </div>
+                    <div class="button-group">
+                        <button type="button" class="btn my-btn mx-3"><a href="#" target="_blank"><i class="fa-solid fa-link"></i>
+                                Visit</a></button>
+                    </div> -->
+                </div>
+            </div>
+        </section>
+        <div class="back-btn-container d-flex align-items-center justify-content-center pb-3">
+            <button type="button" class="btn btn-secondary back-btn"><a href="/portfolio" rel="noopener noreferrer">Back to Home</a></button>
+        </div>
+    </main>
+
+    <footer id="footer" class="bg-dark d-flex flex-row align-items-center justify-content-center">
+        <p class="text-center text-light">2023 &copy; <a href="#" class="text-light">Argha.dev</a></p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/fetchProjects.js"></script>
+</body>
+</html>

@@ -94,6 +94,10 @@ a:hover {
     background-color: var(--purple-dark);
     color: var(--white);
 }
+.back-btn-container {
+    background: var(--main-bg-dark);
+    width: 100%;
+}
 
 .skill-logo {
     width: 70px;
