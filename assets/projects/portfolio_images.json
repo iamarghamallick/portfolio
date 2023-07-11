@@ -1,76 +1,82 @@
 {
-    "portfolio" : [ 
+    "portfolio": [
         {
-            "title" : "arghamedia",
-            "description" : "My Pictures Gallary",
-            "image" : "arghamedia.png",
-            "url" : "https://iamarghamallick.github.io/ARGHAMEDIA/"
+            "title": "arghamedia",
+            "description": "My Pictures Gallary",
+            "image": "arghamedia.png",
+            "url": "https://iamarghamallick.github.io/ARGHAMEDIA/"
         },
         {
-            "title" : "dream clock",
-            "description" : "Set Alarm in the browser",
-            "image" : "dream_clock.png",
-            "url" : "https://iamarghamallick.github.io/DreamClock/"
+            "title": "dream clock",
+            "description": "Set Alarm in the browser",
+            "image": "dream_clock.png",
+            "url": "https://iamarghamallick.github.io/DreamClock/"
         },
         {
-            "title" : "helloweather",
-            "description" : "Get weather updates around the globe",
-            "image" : "helloweather.png",
-            "url" : "https://helloweather.vercel.app/"
+            "title": "helloweather",
+            "description": "Get weather updates around the globe",
+            "image": "helloweather.png",
+            "url": "https://helloweather.vercel.app/"
         },
         {
-            "title" : "how lucky",
-            "description" : "Guess the random number",
-            "image" : "how_lucky_you_are.png",
-            "url" : "https://iamarghamallick.github.io/HowLuckyYouAre/"
+            "title": "how lucky",
+            "description": "Guess the random number",
+            "image": "how_lucky_you_are.png",
+            "url": "https://iamarghamallick.github.io/HowLuckyYouAre/"
         },
         {
-            "title" : "icalculator",
-            "description" : "Simple and Scientific together",
-            "image" : "icalculator.png",
-            "url" : "https://iamarghamallick.github.io/iCalculator/"
+            "title": "icalculator",
+            "description": "Simple and Scientific together",
+            "image": "icalculator.png",
+            "url": "https://iamarghamallick.github.io/iCalculator/"
         },
         {
-            "title" : "inews",
-            "description" : "news app made with react js",
-            "image" : "inews.png",
-            "url" : "https://github.com/iamarghamallick/iNEWS-React-App"
+            "title": "inews",
+            "description": "news app made with react js",
+            "image": "inews.png",
+            "url": "https://github.com/iamarghamallick/iNEWS-React-App"
         },
         {
-            "title" : "inotebook",
-            "description" : "Save your daily ToDos",
-            "image" : "inotebook.png",
-            "url" : "https://inotebook-cloudbase.netlify.app/"
+            "title": "inotebook",
+            "description": "Save your daily ToDos",
+            "image": "inotebook.png",
+            "url": "https://inotebook-cloudbase.netlify.app/"
         },
         {
-            "title" : "inotes",
-            "description" : "Save your ToDos on the browser",
-            "image" : "inotes.png",
-            "url" : "https://iamarghamallick.github.io/iNotes/"
+            "title": "inotes",
+            "description": "Save your ToDos on the browser",
+            "image": "inotes.png",
+            "url": "https://iamarghamallick.github.io/iNotes/"
         },
         {
-            "title" : "mouse tracker",
-            "description" : "Track your on-screen pointer",
-            "image" : "mouse_pointer_tracker.png",
-            "url" : "https://iamarghamallick.github.io/mouse-position-tracker/"
+            "title": "mouse tracker",
+            "description": "Track your on-screen pointer",
+            "image": "mouse_pointer_tracker.png",
+            "url": "https://iamarghamallick.github.io/mouse-position-tracker/"
         },
         {
-            "title" : "simple calculator",
-            "description" : "Play with numbers",
-            "image" : "simple_calculator.png",
-            "url" : "https://iamarghamallick.github.io/SimpleCalculator/"
+            "title": "simple calculator",
+            "description": "Play with numbers",
+            "image": "simple_calculator.png",
+            "url": "https://iamarghamallick.github.io/SimpleCalculator/"
         },
         {
-            "title" : "textutils",
-            "description" : "Fix your text easily",
-            "image" : "text_utils.png",
-            "url" : "https://iamarghamallick.github.io/TextUtils-React-App/"
+            "title": "textutils",
+            "description": "Fix your text easily",
+            "image": "text_utils.png",
+            "url": "https://iamarghamallick.github.io/TextUtils-React-App/"
         },
         {
-            "title" : "tic tac toe",
-            "description" : "Play with fun",
-            "image" : "tic_tac_toe.png",
-            "url" : "https://iamarghamallick.github.io/Tic-Tac-Toe/"
+            "title": "tic tac toe",
+            "description": "Play with fun",
+            "image": "tic_tac_toe.png",
+            "url": "https://iamarghamallick.github.io/Tic-Tac-Toe/"
+        },
+        {
+            "title": "manage stock",
+            "description": "This web app is designed for easily manage the stocks of any shop",
+            "image": "manage-my-stock.png",
+            "url": "https://manage-my-stock.vercel.app/"
         }
     ]
 }
