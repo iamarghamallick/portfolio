@@ -14,7 +14,8 @@ const downloadCv = () => {
 }
 
 // contact form submission
-const CONTACT_BACKEND_HOST = "http://localhost:3000";
+// const CONTACT_BACKEND_HOST = "http://localhost:3000";
+const CONTACT_BACKEND_HOST = "https://contact-form-backend-ruwn.onrender.com";
 
 let contactForm = document.querySelector('.contact-form');
 let name = document.getElementById('name');
