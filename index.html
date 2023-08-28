@@ -194,50 +194,49 @@
                 <!-- below div is to be repeated in the portfolio page -->
                 <div class="content portfolio-item mx-auto">
                     <div class="content-overlay"></div>
-                    <img class="content-image"
-                        src="assets/projects/helloweather.png"
-                        alt="" class="portfolio-image">
+                    <img class="content-image" src="assets/projects/helloweather.png" alt="" class="portfolio-image">
                     <div class="content-details fadeIn-bottom">
                         <h3 class="content-title">HelloWeather</h3>
                         <p class="content-text">Get weather updates around the globe</p>
                     </div>
                     <div class="button-group">
-                        <button type="button" class="btn my-btn mx-3"><a href="https://helloweather.vercel.app/" target="_blank"><i class="fa-solid fa-link"></i>
+                        <button type="button" class="btn my-btn mx-3"><a href="https://helloweather.vercel.app/"
+                                target="_blank"><i class="fa-solid fa-link"></i>
                                 Visit</a></button>
                     </div>
                 </div>
                 <div class="content portfolio-item mx-auto">
                     <div class="content-overlay"></div>
-                    <img class="content-image"
-                        src="assets/projects/tic_tac_toe.png"
-                        alt="" class="portfolio-image">
+                    <img class="content-image" src="assets/projects/tic_tac_toe.png" alt="" class="portfolio-image">
                     <div class="content-details fadeIn-bottom">
                         <h3 class="content-title">tic tac toe</h3>
                         <p class="content-text">Play with fun</p>
                     </div>
                     <div class="button-group">
-                        <button type="button" class="btn my-btn mx-3"><a href="https://iamarghamallick.github.io/Tic-Tac-Toe/" target="_blank"><i class="fa-solid fa-link"></i>
+                        <button type="button" class="btn my-btn mx-3"><a
+                                href="https://iamarghamallick.github.io/Tic-Tac-Toe/" target="_blank"><i
+                                    class="fa-solid fa-link"></i>
                                 Visit</a></button>
                     </div>
                 </div>
                 <div class="content portfolio-item mx-auto">
                     <div class="content-overlay"></div>
-                    <img class="content-image"
-                        src="assets/projects/inotebook.png"
-                        alt="" class="portfolio-image">
+                    <img class="content-image" src="assets/projects/inotebook.png" alt="" class="portfolio-image">
                     <div class="content-details fadeIn-bottom">
                         <h3 class="content-title">inotebook</h3>
                         <p class="content-text">Cloud storage for your daily ToDos</p>
                     </div>
                     <div class="button-group">
-                        <button type="button" class="btn my-btn mx-3"><a href="https://inotebook-cloudbase.netlify.app/" target="_blank"><i class="fa-solid fa-link"></i>
+                        <button type="button" class="btn my-btn mx-3"><a href="https://inotebook-cloudbase.netlify.app/"
+                                target="_blank"><i class="fa-solid fa-link"></i>
                                 Visit</a></button>
                     </div>
                 </div>
             </div>
         </section>
         <div class="back-btn-container d-flex align-items-center justify-content-center pb-3">
-            <button type="button" class="btn btn-secondary back-btn"><a href="/portfolio/project.html" rel="noopener noreferrer">View All</a></button>
+            <button type="button" class="btn btn-secondary back-btn"><a href="/portfolio/project.html"
+                    rel="noopener noreferrer">View All</a></button>
         </div>
 
         <!-- contact  -->
@@ -247,48 +246,51 @@
                     <h2>CONTACT</h2>
                     <div class="links">
                         <div class="link">
-                            <a href="https://www.linkedin.com/in/iamarghamallick/" target="_blank"><img src="assets/social/linkedin.svg" alt="linkedin"></a>
+                            <a href="https://www.linkedin.com/in/iamarghamallick/" target="_blank"><img
+                                    src="assets/social/linkedin.svg" alt="linkedin"></a>
                         </div>
                         <div class="link">
-                            <a href="https://github.com/iamarghamallick" target="_blank"><img src="assets/social/github.svg" alt="github"></a>
+                            <a href="https://github.com/iamarghamallick" target="_blank"><img
+                                    src="assets/social/github.svg" alt="github"></a>
                         </div>
                         <div class="link">
-                            <a href="https://twitter.com/iamarghamallick" target="_blank"><img src="assets/social/twitter.svg" alt="twitter"></a>
+                            <a href="https://twitter.com/iamarghamallick" target="_blank"><img
+                                    src="assets/social/twitter.svg" alt="twitter"></a>
                         </div>
                         <div class="link">
-                            <a href="https://www.facebook.com/iam_arghamallick" target="_blank"><img src="assets/social/facebook.svg" alt="facebook"></a>
+                            <a href="https://www.facebook.com/iam_arghamallick" target="_blank"><img
+                                    src="assets/social/facebook.svg" alt="facebook"></a>
                         </div>
                         <div class="link">
-                            <a href="https://www.instagram.com/iamarghamallick/" target="_blank"><img src="assets/social/instagram.svg" alt="instagram"></a>
+                            <a href="https://www.instagram.com/iamarghamallick/" target="_blank"><img
+                                    src="assets/social/instagram.svg" alt="instagram"></a>
                         </div>
                         <div class="link">
-                            <a href="mailto:contact.arghamallick@gmail.com" target="_blank"><img src="assets/social/mail.svg"
-                                    alt="mail"></a>
+                            <a href="mailto:contact.arghamallick@gmail.com" target="_blank"><img
+                                    src="assets/social/mail.svg" alt="mail"></a>
                         </div>
                     </div>
+                    <div id="alert-message" class="alert-message"></div>
                 </div>
                 <div class="contact-form-wrapper">
-                    <form action="https://formsubmit.co/48923bedb51b77009e05598129145146" method="POST">
+                    <form class="contact-form">
                         <div class="form-item">
-                            <input type="text" name="sender" required>
-                            <label>Name:</label>
+                            <input id="name" type="text" name="name" required>
+                            <label>Name</label>
                         </div>
                         <div class="form-item">
-                            <input type="text" name="email" required>
-                            <label>Email:</label>
+                            <input id="email" type="email" name="email" required>
+                            <label>Email</label>
                         </div>
                         <div class="form-item">
-                            <textarea class="" name="message" required></textarea>
-                            <label>Message:</label>
+                            <input id="subject" type="text" name="subject" required>
+                            <label>Subject</label>
                         </div>
-                        <!-- hidden input fields to setup form submit  -->
-                        <!-- <input type="hidden" name="_captcha" value="false"> -->
-                        <input type="hidden" name="_subject" value="New submission!">
-                        <input type="hidden" name="_next"
-                            value="https://iamarghamallick.github.io/portfolio/pages/thanks.html">
-                        <input type="hidden" name="_autoresponse"
-                            value="Thanks for your response. I will get back to soon!">
-                        <button type="submit" class="submit-btn">Send</button>
+                        <div class="form-item">
+                            <textarea id="message" class="message" name="message" required></textarea>
+                            <label>Message</label>
+                        </div>
+                        <button id="submit-btn" type="submit" class="submit-btn">Send</button>
                     </form>
                 </div>
             </div>

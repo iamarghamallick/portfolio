@@ -13,40 +13,51 @@ const downloadCv = () => {
     alert('Currently unavailable! Please try later.')
 }
 
-// // update the content of portfolio section 
-// portfolioContainer = document.getElementById('portfolio-container')
-// const url = "assets/projects/portfolio_images.json"
-// const loading = document.getElementById('loading');
-// const fetchProjects = async () => {
-//     // get call
-//     let request = await fetch(url)
-//     let response = await request.json()
-//     let portfolioData = response.portfolio
-//     // console.log(portfolioData)
+// contact form submission
+const CONTACT_BACKEND_HOST = "http://localhost:3000";
 
-//     // updating the content
-//     let html = ""
-//     portfolioData.map((item) => {
-//         html += `
-//         <div class="content portfolio-item mx-auto">
-//         <div class="content-overlay"></div>
-//         <img class="content-image"
-//             src="assets/projects/${item.image}"
-//             alt="" class="portfolio-image">
-//         <div class="content-details fadeIn-bottom">
-//             <h3 class="content-title">${item.title}</h3>
-//             <p class="content-text">${item.description}</p>
-//         </div>
-//         <div class="button-group">
-//             <button type="button" class="btn my-btn mx-3"><a href="${item.url}" target="_blank"><i class="fa-solid fa-link"></i>
-//                     Visit</a></button>
-//         </div>
-//     </div>
-//         `
-//     })
-//     portfolioContainer.innerHTML = html;
-//     try {
-//         loading.classList.add('d-none');
-//     } catch(err) {  }
-// }
-// fetchProjects();
+let contactForm = document.querySelector('.contact-form');
+let name = document.getElementById('name');
+let email = document.getElementById('email');
+let subject = document.getElementById('subject');
+let message = document.getElementById('message');
+let alertMessage = document.getElementById('alert-message');
+
+contactForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+
+    let formData = {
+        name: name.value,
+        email: email.value,
+        subject: subject.value,
+        message: message.value
+    }
+
+    let xhr = new XMLHttpRequest();
+    xhr.open('POST', `${CONTACT_BACKEND_HOST}/sendemail`);
+    xhr.setRequestHeader('content-type', 'application/json');
+    xhr.onload = function () {
+        console.log(xhr.responseText);
+        if (xhr.responseText == 'success') {
+            // alert('Message sent');
+            // show success message
+            alertMessage.innerText = "Message sent Successfully!";
+            setTimeout(() => {
+                alertMessage.innerText = "";
+            }, 5000);
+            name.value = "";
+            email.value = "";
+            subject.value = "";
+            message.value = "";
+        } else {
+            // alert('Something went wrong!');
+            // show error message
+            alertMessage.innerText = "Failed to send the message!";
+            setTimeout(() => {
+                alertMessage.innerText = "";
+            }, 5000);
+        }
+    }
+
+    xhr.send(JSON.stringify(formData));
+})
