@@ -23,9 +23,17 @@ let email = document.getElementById('email');
 let subject = document.getElementById('subject');
 let message = document.getElementById('message');
 let alertMessage = document.getElementById('alert-message');
+let submitBtn = document.getElementById('submit-btn');
 
 contactForm.addEventListener('submit', (e) => {
     e.preventDefault();
+
+    // start loading
+    submitBtn.disabled = true;
+    submitBtn.innerHTML = `
+        <div class="spinner-border text-light" role = "status" style = "width: 1rem; height: 1rem; margin: 0 13.71px;">
+            <span class="visually-hidden">Loading...</span>
+        </div>`
 
     let formData = {
         name: name.value,
@@ -41,10 +49,11 @@ contactForm.addEventListener('submit', (e) => {
         console.log(xhr.responseText);
         if (xhr.responseText == 'success') {
             // alert('Message sent');
-            // show success message
-            alertMessage.innerText = "Message sent Successfully!";
+            // show success message and stop loading
+            submitBtn.innerHTML = "Success!"
             setTimeout(() => {
-                alertMessage.innerText = "";
+                submitBtn.innerHTML = "Send"
+                submitBtn.disabled = false;
             }, 5000);
             name.value = "";
             email.value = "";
@@ -52,10 +61,11 @@ contactForm.addEventListener('submit', (e) => {
             message.value = "";
         } else {
             // alert('Something went wrong!');
-            // show error message
-            alertMessage.innerText = "Failed to send the message!";
+            // show error message and stop loading
+            submitBtn.innerHTML = "Failed!"
             setTimeout(() => {
-                alertMessage.innerText = "";
+                submitBtn.innerHTML = "Send"
+                submitBtn.disabled = false;
             }, 5000);
         }
     }

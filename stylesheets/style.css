@@ -363,13 +363,6 @@ textarea:valid+label {
     filter: sepia(0.5);
 }
 
-.alert-message {
-    color: white;
-    text-align: center;
-    font-size: 1.2rem;
-    margin-top: 2rem;
-}
-
 /* footer  */
 footer {
     background-color: var(--main-bg-dark);
