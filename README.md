@@ -1,3 +1,3 @@
 # portfolio
 My Developer Portfolio
-# Visit to [Argha.Dev](https://iamarghamallick.github.io/portfolio/)
+# Visit to [My Portfolio](https://iamarghamallick.github.io/portfolio/)
