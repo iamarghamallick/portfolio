@@ -36,6 +36,7 @@ a {
     text-decoration: none;
     color: var(--white);
 }
+
 a:hover {
     color: var(--white);
 }
@@ -43,11 +44,12 @@ a:hover {
 .text-purple {
     color: var(--purple);
 }
+
 .text-white {
     color: var(--white);
 }
 
-.h-bar{
+.h-bar {
     position: absolute;
     left: 5%;
     right: 5%;
@@ -80,20 +82,24 @@ a:hover {
     border-radius: 30px;
     color: var(--white);
 }
+
 .my-btn-fill {
     background-color: var(--purple);
     border: 1px solid var(--purple);
     border-radius: 30px;
     color: var(--white);
 }
+
 .my-btn:hover {
     background-color: var(--dark-deep);
     color: var(--white);
 }
+
 .my-btn-fill:hover {
     background-color: var(--purple-dark);
     color: var(--white);
 }
+
 .back-btn-container {
     background: var(--main-bg-dark);
     width: 100%;
@@ -105,7 +111,7 @@ a:hover {
 
 .skill-progress-bar {
     height: 10px;
-    background-image: linear-gradient(to right, var(--purple-dark) , var(--purple));
+    background-image: linear-gradient(to right, var(--purple-dark), var(--purple));
     border-radius: 20px;
     margin-bottom: 10px;
 }
@@ -113,18 +119,41 @@ a:hover {
 .skill-progress-bar.fifty {
     width: 50%;
 }
+
 .skill-progress-bar.sixty {
     width: 60%;
 }
+
 .skill-progress-bar.seventy {
     width: 70%;
 }
+
 .skill-progress-bar.eighty {
     width: 80%;
 }
+
 .skill-progress-bar.ninty {
     width: 90%;
 }
+
 .skill-progress-bar.hundred {
+    width: 100%;
+}
+
+.home #particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+}
+
+.home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
     width: 100%;
 }

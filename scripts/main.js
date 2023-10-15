@@ -69,3 +69,8 @@ try {
         submitBtn.style.backgroundColor = "#eb00f3"
     }, 5000);
 }
+
+/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+particlesJS.load('particles-js', 'assets/particles.json', function () {
+    console.log('callback - particles.js config loaded');
+});

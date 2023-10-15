@@ -1,4 +1,4 @@
-// update the content of portfolio section 
+// update the content of portfolio section
 portfolioContainer = document.getElementById('portfolio-container')
 const url = "assets/projects/portfolio_images.json"
 const loading = document.getElementById('loading');
@@ -32,6 +32,6 @@ const fetchProjects = async () => {
     portfolioContainer.innerHTML = html;
     try {
         loading.classList.add('d-none');
-    } catch(err) {  }
+    } catch (err) { }
 }
 fetchProjects();

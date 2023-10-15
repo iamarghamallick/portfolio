@@ -39,10 +39,19 @@
 }
 
 .home-left p {
+    position: relative;
+    z-index: 100;
     font-size: 2rem;
 }
 
+.home-left button {
+    position: relative;
+    z-index: 100;
+}
+
 .home-right img {
+    position: relative;
+    z-index: 100;
     width: 400px;
 }
 
