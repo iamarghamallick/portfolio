@@ -374,6 +374,25 @@ textarea:valid+label {
 
 /* footer  */
 footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
     background-color: var(--main-bg-dark);
     height: 5rem;
+}
+
+footer p {
+    font-size: 1.2rem;
+    color: #bebebe;
+}
+
+footer a {
+    font-size: 1.2rem;
+    color: #bebebe;
+}
+
+footer img {
+    height: 30px;
 }
