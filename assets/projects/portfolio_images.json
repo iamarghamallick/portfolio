@@ -111,6 +111,41 @@
             "description": "A Tech blog made with NEXT Js to share my write ups or any tech content",
             "image": "hello-argha-blog.png",
             "url": "https://helloargha.vercel.app/blog"
+        },
+        {
+            "id": 17,
+            "title": "argha media",
+            "description": "A Next js web application where I showcase my clicks as a Mobile Photographer",
+            "image": "argha-media.png",
+            "url": "https://arghamedia.vercel.app/"
+        },
+        {
+            "id": 18,
+            "title": "news bits",
+            "description": "A python web application to read the summarized daily news articles with ML Capabilities",
+            "image": "news-bits.png",
+            "url": "https://newsbits.onrender.com/"
+        },
+        {
+            "id": 19,
+            "title": "crop recommendation system",
+            "description": "Python Flask app leveraging machine learning for a Crop Recommendation System",
+            "image": "crop-recommendation-system.png",
+            "url": "https://crop-recommendation-system-y4n9.onrender.com/"
+        },
+        {
+            "id": 20,
+            "title": "little lemon",
+            "description": "A demo resturant website front-end made with React js",
+            "image": "little-lemon.png",
+            "url": "https://little-lemon-kolkata.netlify.app/"
+        },
+        {
+            "id": 21,
+            "title": "gdsc bppimt",
+            "description": "Developed the Official website for Google Developers Students Club, BPPIMT",
+            "image": "gdsc-bppimt.png",
+            "url": "https://google-dsc-bppimt.netlify.app/"
         }
     ]
 }

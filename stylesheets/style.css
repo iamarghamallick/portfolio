@@ -49,6 +49,11 @@
     z-index: 100;
 }
 
+.home-right {
+    /* showing after checking the current hrs via js */
+    visibility: hidden;
+}
+
 .home-right img {
     position: relative;
     z-index: 100;

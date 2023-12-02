@@ -66,8 +66,10 @@
                 <button type="button" class="btn btn-dark" onclick="downloadCv()"><i class="fa-solid fa-download"></i>
                     Download CV</button>
             </div>
-            <div class="home-right mx-auto">
-                <img src="assets/images/home-bg-2.svg" alt="home-bg">
+            <div class="home-right mx-auto" id="home-util-img">
+                <img src="assets/images/home-bg.png" alt="home-bg">
+                <!-- showing below img after 17 hrs -->
+                <!-- <img src="assets/images/home-bg-2.svg" alt="home-bg"> -->
             </div>
         </section>
         <div class="h-bar"></div>
@@ -201,6 +203,36 @@
                 <!-- below div is to be repeated in the portfolio page -->
                 <div class="content portfolio-item mx-auto">
                     <div class="content-overlay"></div>
+                    <img class="content-image" src="assets/projects/argha-media.png" alt="" class="portfolio-image">
+                    <div class="content-details fadeIn-bottom">
+                        <h3 class="content-title">Argha Media</h3>
+                        <p class="content-text">A Next js web application where I showcase my clicks as a Mobile
+                            Photographer
+                        </p>
+                    </div>
+                    <div class="button-group">
+                        <button type="button" class="btn my-btn mx-3"><a href="https://arghamedia.vercel.app/"
+                                target="_blank"><i class="fa-solid fa-link"></i>
+                                Visit</a></button>
+                    </div>
+                </div>
+                <div class="content portfolio-item mx-auto">
+                    <div class="content-overlay"></div>
+                    <img class="content-image" src="assets/projects/gdsc-bppimt.png" alt="" class="portfolio-image">
+                    <div class="content-details fadeIn-bottom">
+                        <h3 class="content-title">Google-DSC BPPIMT</h3>
+                        <p class="content-text">Developed the Official website for Google Developers Students Club,
+                            BPPIMT
+                        </p>
+                    </div>
+                    <div class="button-group">
+                        <button type="button" class="btn my-btn mx-3"><a href="https://google-dsc-bppimt.netlify.app/"
+                                target="_blank"><i class="fa-solid fa-link"></i>
+                                Visit</a></button>
+                    </div>
+                </div>
+                <div class="content portfolio-item mx-auto">
+                    <div class="content-overlay"></div>
                     <img class="content-image" src="assets/projects/hello-argha-blog.png" alt=""
                         class="portfolio-image">
                     <div class="content-details fadeIn-bottom">
@@ -284,6 +316,21 @@
                                 Visit</a></button>
                     </div>
                 </div>
+                <div class="content portfolio-item mx-auto">
+                    <div class="content-overlay"></div>
+                    <img class="content-image" src="assets/projects/news-bits.png" alt="" class="portfolio-image">
+                    <div class="content-details fadeIn-bottom">
+                        <h3 class="content-title">News Bits</h3>
+                        <p class="content-text">A python web application to read the summarized daily news articles with
+                            ML Capabilities
+                        </p>
+                    </div>
+                    <div class="button-group">
+                        <button type="button" class="btn my-btn mx-3"><a href="https://newsbits.onrender.com/"
+                                target="_blank"><i class="fa-solid fa-link"></i>
+                                Visit</a></button>
+                    </div>
+                </div>
             </div>
         </section>
         <div class="back-btn-container d-flex align-items-center justify-content-center pb-3">
@@ -348,6 +395,9 @@
                 </div>
             </div>
         </section>
+
+        <!-- scroll to top button  -->
+        <a id="back-to-top"></a>
     </main>
 
     <footer id="footer">

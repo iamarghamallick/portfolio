@@ -157,3 +157,51 @@ a:hover {
     height: 100%;
     width: 100%;
 }
+
+/* back to top button */
+#back-to-top {
+    display: inline-block;
+    background-color: var(--white);
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+}
+
+#back-to-top::after {
+    content: "\f077";
+    font-family: FontAwesome;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1em;
+    line-height: 30px;
+    color: var(--purple-dark);
+    transition: color .3s,
+        opacity .5s, visibility .5s;
+}
+
+#back-to-top:hover {
+    cursor: pointer;
+    background-color: var(--indigo);
+}
+
+#back-to-top:hover::after {
+    color: var(--white);
+}
+
+#back-to-top:active {
+    background-color: var(--info);
+}
+
+#back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+}

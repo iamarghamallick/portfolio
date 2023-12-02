@@ -74,3 +74,27 @@ try {
 particlesJS.load('particles-js', 'assets/particles.json', function () {
     console.log('callback - particles.js config loaded');
 });
+
+// back to top button
+let backToTop = document.querySelector('#back-to-top');
+window.addEventListener('scroll', () => {
+    // console.log(window.scrollY);
+    if (window.scrollY > 600)
+        backToTop.classList.add('show');
+    else
+        backToTop.classList.remove('show');
+})
+
+backToTop.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" })
+})
+
+// showing different image after 17 hrs
+let homeUtilImg = document.querySelector('#home-util-img');
+let currHrs = new Date().getHours();
+if (currHrs >= 17) {
+    homeUtilImg.innerHTML = `<img src="assets/images/home-bg-2.svg" alt="home-bg">`;
+    homeUtilImg.style.visibility = "visible";
+} else
+    homeUtilImg.style.visibility = "visible";

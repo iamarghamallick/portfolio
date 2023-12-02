@@ -11,7 +11,7 @@ const fetchProjects = async () => {
 
     // updating the content
     let html = ""
-    portfolioData.map((item) => {
+    portfolioData.reverse().map((item) => {
         html += `
         <div class="content portfolio-item mx-auto">
         <div class="content-overlay"></div>
