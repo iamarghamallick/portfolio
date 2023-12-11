@@ -92,9 +92,14 @@ backToTop.addEventListener('click', (e) => {
 
 // showing different image after 17 hrs
 let homeUtilImg = document.querySelector('#home-util-img');
-let currHrs = new Date().getHours();
+let currYearElem = document.querySelector('#curr-year');
+let d = new Date();
+let currHrs = d.getHours();
+let currYear = d.getFullYear();
 if (currHrs % 2 === 0) {
     homeUtilImg.innerHTML = `<img src="assets/images/home-bg-2.svg" alt="home-bg">`;
     homeUtilImg.style.visibility = "visible";
 } else
     homeUtilImg.style.visibility = "visible";
+
+currYearElem.innerHTML = currYear;
