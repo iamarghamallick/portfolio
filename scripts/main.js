@@ -72,7 +72,7 @@ try {
 
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
 particlesJS.load('particles-js', 'assets/particles.json', function () {
-    console.log('callback - particles.js config loaded');
+    // console.log('callback - particles.js config loaded');
 });
 
 // back to top button
@@ -93,7 +93,7 @@ backToTop.addEventListener('click', (e) => {
 // showing different image after 17 hrs
 let homeUtilImg = document.querySelector('#home-util-img');
 let currHrs = new Date().getHours();
-if (currHrs >= 17) {
+if (currHrs % 2 === 0) {
     homeUtilImg.innerHTML = `<img src="assets/images/home-bg-2.svg" alt="home-bg">`;
     homeUtilImg.style.visibility = "visible";
 } else
