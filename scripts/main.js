@@ -90,6 +90,15 @@ backToTop.addEventListener('click', (e) => {
     window.scrollTo({ top: 0, behavior: "smooth" })
 })
 
+// change dp with an interval of 60 sec
+let dp = document.getElementById("dp");
+setInterval(() => {
+    if (dp.innerHTML === '<img src="assets/images/argha.png" alt="argha">')
+        dp.innerHTML = `<img src="assets/images/argha2.jpeg" alt="argha">`;
+    else
+        dp.innerHTML = `<img src="assets/images/argha.png" alt="argha">`;
+}, 60000);
+
 // showing different image after 17 hrs
 let homeUtilImg = document.querySelector('#home-util-img');
 let currYearElem = document.querySelector('#curr-year');
