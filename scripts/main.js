@@ -104,12 +104,15 @@ let homeUtilImg = document.querySelector('#home-util-img');
 let currYearElem = document.querySelector('#curr-year');
 let d = new Date();
 let currYear = d.getFullYear();
-let rand = Math.floor(Math.random() * 10);
-if (rand == 0 || rand == 1 || rand == 2) {
+let rand = Math.floor(Math.random() * 4);
+if (rand == 0) {
     homeUtilImg.innerHTML = `<img src="assets/images/home-bg-3.png" alt="home-bg">`;
     homeUtilImg.style.visibility = "visible";
-} else if (rand == 3 || rand == 4 || rand == 5) {
+} else if (rand == 1) {
     homeUtilImg.innerHTML = `<img src="assets/images/home-bg-2.svg" alt="home-bg">`;
+    homeUtilImg.style.visibility = "visible";
+} else if (rand == 2) {
+    homeUtilImg.innerHTML = `<img src="assets/images/home-bg-4.webp" alt="home-bg">`;
     homeUtilImg.style.visibility = "visible";
 } else
     // homeUtilImg.innerHTML = `<img src="assets/images/home-bg.png" alt="home-bg">`; // default set
