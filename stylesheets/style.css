@@ -536,13 +536,23 @@ time {
     }
 }
 
+@media screen and (max-width: 425px) {
+    .timeline ul li {
+        margin-left: 15px;
+    }
+
+    .timeline ul li div {
+        width: 320px;
+    }
+}
+
 @media screen and (max-width: 375px) {
     .timeline ul li {
         margin-left: 15px;
     }
 
     .timeline ul li div {
-        width: 290px;
+        width: 270px;
     }
 }
 
@@ -552,7 +562,7 @@ time {
     }
 
     .timeline ul li div {
-        width: 240px;
+        width: 220px;
     }
 }
 
