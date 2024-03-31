@@ -2,10 +2,10 @@
     "portfolio": [
         {
             "id": 1,
-            "title": "arghamedia",
-            "description": "My Pictures Gallary",
-            "image": "arghamedia.png",
-            "url": "https://iamarghamallick.github.io/ARGHAMEDIA/"
+            "title": "gemini chatbot",
+            "description": "Personal ChatBot made with Gemini-Pro API",
+            "image": "geminichatbot.png",
+            "url": "https://my-gemini.streamlit.app/"
         },
         {
             "id": 2,
