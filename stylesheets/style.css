@@ -58,6 +58,7 @@
     position: relative;
     z-index: 100;
     width: 400px;
+    filter: drop-shadow(-3px -3px 2px var(--white));
 }
 
 /* about  */
