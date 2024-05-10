@@ -158,47 +158,58 @@ a:hover {
     width: 100%;
 }
 
+@keyframes up {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translateY(-15px);
+    }
+
+    40% {
+        transform: translate(0);
+    }
+}
+
+@-webkit-keyframes up {
+    0% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translateY(-15px);
+    }
+
+    40% {
+        transform: translate(0);
+    }
+}
+
 /* back to top button */
 #back-to-top {
     display: inline-block;
-    background-color: var(--white);
-    width: 30px;
-    height: 30px;
+    background-color: var(--indigo);
+    width: 50px;
+    height: 50px;
     text-align: center;
     border-radius: 50%;
     position: fixed;
     bottom: 100px;
-    right: 30px;
+    right: 50px;
     transition: background-color .3s,
         opacity .5s, visibility .5s;
     opacity: 0;
     visibility: hidden;
     z-index: 1000;
-}
-
-#back-to-top::after {
-    content: "\f077";
-    font-family: FontAwesome;
-    font-weight: normal;
-    font-style: normal;
-    font-size: 1em;
-    line-height: 30px;
-    color: var(--purple-dark);
-    transition: color .3s,
-        opacity .5s, visibility .5s;
+    animation: up 1.5s infinite;
+    -webkit-animation: up 1.5s infinite;
+    box-shadow: 0 2px 8px 0 var(--light), 0 0 10px 0 var(--cyan);
 }
 
 #back-to-top:hover {
     cursor: pointer;
-    background-color: var(--indigo);
-}
-
-#back-to-top:hover::after {
-    color: var(--white);
-}
-
-#back-to-top:active {
-    background-color: var(--info);
+    background-color: var(--blue);
 }
 
 #back-to-top.show {
